@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#17100d">
+<title>Força Máxima | Pizzaria Escolar</title>
+<style>
+:root{--bg:#17100d;--panel:#241914;--cream:#fff4e5;--muted:#c8b6a4;--red:#e54832;--gold:#f4b544;--green:#25a765}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--cream);font-family:Arial,Helvetica,sans-serif}a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer}.topbar{background:#0e0a08;color:#e9d6c2;text-align:center;padding:9px 12px;font-size:12px;letter-spacing:.6px}.nav{max-width:1160px;margin:auto;padding:20px 22px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-size:24px;font-weight:900;letter-spacing:-1px}.brand span{color:var(--gold)}.navlinks{display:flex;gap:24px;color:#e5d4c4;font-size:14px}.cartbtn,.primary{border:0;border-radius:999px;background:var(--red);color:white;padding:13px 19px;font-weight:800}.cartbtn b{background:white;color:var(--red);border-radius:50%;padding:3px 7px;margin-left:6px}.hero{max-width:1160px;margin:auto;padding:42px 22px 70px;display:grid;grid-template-columns:1.02fr .98fr;align-items:center;gap:32px}.eyebrow{color:var(--gold);font-size:12px;font-weight:800;letter-spacing:2px;text-transform:uppercase}.hero h1{font-size:clamp(42px,6vw,76px);line-height:.99;letter-spacing:-3px;margin:18px 0}.hero h1 em{font-style:normal;color:var(--gold)}.hero p{color:var(--muted);font-size:17px;line-height:1.7;max-width:480px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}.secondary{border:1px solid #62483a;background:transparent;color:var(--cream);border-radius:999px;padding:13px 19px;font-weight:700}.heroimg{position:relative}.heroimg img{width:100%;height:430px;object-fit:cover;border-radius:28px;display:block;box-shadow:0 22px 70px #0008}.badge{position:absolute;left:-16px;bottom:24px;background:var(--gold);color:#2a170b;border-radius:16px;padding:16px 20px;font-weight:900;transform:rotate(-4deg)}.section{padding:65px 22px}.section.alt{background:#201611}.wrap{max-width:1160px;margin:auto}.sectionhead{display:flex;align-items:end;justify-content:space-between;gap:18px;margin-bottom:28px}.section h2{font-size:clamp(30px,4vw,44px);letter-spacing:-1.5px;margin:8px 0}.sub{color:var(--muted);line-height:1.6}.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px}.filter{border:1px solid #594034;color:var(--cream);background:transparent;border-radius:999px;padding:9px 15px}.filter.active{background:var(--gold);color:#21140b;border-color:var(--gold);font-weight:800}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{background:var(--panel);border:1px solid #3d2b21;border-radius:20px;overflow:hidden;transition:transform .2s}.card:hover{transform:translateY(-4px)}.card img{width:100%;height:205px;object-fit:cover;display:block}.cardbody{padding:18px}.cardtop{display:flex;justify-content:space-between;gap:12px;align-items:start}.card h3{margin:0;font-size:20px}.price{color:var(--gold);font-weight:900;white-space:nowrap}.card p{font-size:13px;line-height:1.6;color:var(--muted);min-height:42px}.add{width:100%;padding:11px;border:0;border-radius:11px;background:#3b2920;color:var(--cream);font-weight:800}.add:hover{background:var(--red)}.promo{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:28px;background:#332017;border-radius:26px;padding:28px}.promo img{width:100%;height:280px;object-fit:cover;border-radius:18px}.promo h2{font-size:clamp(30px,4vw,46px);line-height:1.05}.promo strong{color:var(--gold)}.footer{padding:34px 22px;color:var(--muted);text-align:center;font-size:13px}.cartpanel{position:fixed;inset:0;background:#0009;z-index:10;display:none;justify-content:flex-end}.cartpanel.open{display:flex}.cart{width:min(420px,100%);height:100%;overflow:auto;background:#1d130f;padding:24px;box-shadow:-10px 0 50px #0005}.carthead{display:flex;justify-content:space-between;align-items:center}.close{background:none;border:0;color:white;font-size:28px}.cartitem{padding:15px 0;border-bottom:1px solid #493329;display:flex;justify-content:space-between;gap:10px}.qty{display:flex;align-items:center;gap:8px}.qty button{border:0;border-radius:50%;width:25px;height:25px}.total{display:flex;justify-content:space-between;font-size:20px;font-weight:900;margin:22px 0}.checkout{width:100%;padding:15px;background:var(--green);color:white;border:0;border-radius:12px;font-weight:900}.empty{color:var(--muted);padding:35px 0;text-align:center}
+@media(max-width:760px){.navlinks{display:none}.hero{grid-template-columns:1fr;padding-top:28px}.heroimg img{height:300px}.badge{left:8px}.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.card img{height:145px}.cardbody{padding:13px}.card h3{font-size:16px}.card p{font-size:12px}.price{font-size:14px}.sectionhead{align-items:start;flex-direction:column}.promo{grid-template-columns:1fr;padding:18px}.promo img{height:220px}}
+@media(max-width:420px){.grid{grid-template-columns:1fr}.card{display:grid;grid-template-columns:120px 1fr}.card img{height:100%;min-height:170px}.card p{min-height:0}.hero h1{letter-spacing:-2px}}
+</style>
+</head>
+<body>
+<div class="topbar">🍕 MASSA ARTESANAL • INGREDIENTES FRESCOS • FEITA NA HORA</div>
+<header class="nav">
+  <a class="brand" href="#">FORÇA <span>MÁXIMA.</span></a>
+  <nav class="navlinks"><a href="#inicio">Início</a><a href="#cardapio">Cardápio</a><a href="#sobre">Nossa história</a></nav>
+  <button class="cartbtn" onclick="toggleCart(true)">🛒 Sacola <b id="cartCount">0</b></button>
+</header>
+<main>
+<section class="hero" id="inicio">
+  <div><div class="eyebrow">A felicidade vem em fatias</div><h1>Pizza boa.<br><em>Momento perfeito.</em></h1>
+  <p>Massa artesanal, molho da casa e ingredientes selecionados. A gente prepara com carinho para sua próxima noite ficar ainda melhor.</p>
+  <div class="actions"><a class="primary" href="#cardapio">Ver nosso cardápio ↗</a><a class="secondary" href="#sobre">Conheça a pizzaria</a></div></div>
+  <div class="heroimg"><img src="https://images.unsplash.com/photo-1571066811602-716837d681de?auto=format&fit=crop&w=1200&q=85" alt="Pizza artesanal recém-saída do forno"><div class="badge">🔥 ASSADA NA HORA</div></div>
+</section>
+<section class="section alt" id="cardapio"><div class="wrap">
+  <div class="sectionhead"><div><div class="eyebrow">Escolha sua favorita</div><h2>Nosso cardápio</h2><div class="sub">Clássicas irresistíveis e combinações especiais.</div></div><div class="sub">Os preços são exemplos e podem ser editados.</div></div>
+  <div class="filters"><button class="filter active" data-filter="todas">Todas</button><button class="filter" data-filter="classicas">Clássicas</button><button class="filter" data-filter="especiais">Especiais</button><button class="filter" data-filter="doces">Doces</button></div>
+  <div class="grid" id="products"></div>
+</div></section>
+<section class="section" id="sobre"><div class="wrap promo">
+  <div><div class="eyebrow">Feita com carinho</div><h2>A pizzaria do nosso projeto escolar.</h2><p class="sub">Projeto desenvolvido para a escola Força Máxima, em JD. Metrópoles. Uma ideia de pizzaria com sabores especiais e pedidos simples pelo WhatsApp.</p><a href="#cardapio" class="primary" style="display:inline-block;margin-top:12px">Escolher minha pizza</a></div>
+  <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1000&q=85" alt="Pizza artesanal com queijo e manjericão">
+</div></section>
+</main>
+<footer class="footer">FORÇA MÁXIMA • JD. METRÓPOLES © <span id="year"></span> • Feito para compartilhar bons momentos.<br>Projeto escolar • JD. Metrópoles</footer>
+<div class="cartpanel" id="cartPanel" onclick="if(event.target===this)toggleCart(false)"><aside class="cart">
+  <div class="carthead"><h2>Sua sacola 🛒</h2><button class="close" onclick="toggleCart(false)" aria-label="Fechar">×</button></div>
+  <div id="cartItems"></div><div class="total"><span>Total</span><span id="total">R$ 0,00</span></div>
+  <button class="checkout" onclick="checkout()">Finalizar pedido pelo WhatsApp</button>
+  <p class="sub" style="font-size:12px">Projeto escolar: os pedidos são encaminhados para o WhatsApp informado.</p>
+</aside></div>
+<script>
+const pizzas=[
+{id:1,name:"Margherita",category:"classicas",price:39.90,desc:"Molho da casa, muçarela, tomate e manjericão.",img:"https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=800&q=80"},
+{id:2,name:"Calabresa",category:"classicas",price:42.90,desc:"Calabresa fatiada, cebola e muçarela derretida.",img:"https://images.unsplash.com/photo-1628840042765-356cda07504e?auto=format&fit=crop&w=800&q=80"},
+{id:3,name:"Quatro Queijos",category:"especiais",price:47.90,desc:"Muçarela, parmesão, provolone e gorgonzola.",img:"https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=800&q=80"},
+{id:4,name:"Pepperoni",category:"especiais",price:49.90,desc:"Pepperoni especial e uma camada generosa de queijo.",img:"https://images.unsplash.com/photo-1628840042765-356cda07504e?auto=format&fit=crop&w=800&q=80"},
+{id:5,name:"Frango Cremoso",category:"especiais",price:46.90,desc:"Frango temperado, requeijão cremoso e orégano.",img:"https://images.unsplash.com/photo-1571066811602-716837d681de?auto=format&fit=crop&w=800&q=80"},
+{id:6,name:"Chocolate",category:"doces",price:38.90,desc:"Chocolate cremoso, massa dourada e muito carinho.",img:"https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?auto=format&fit=crop&w=800&q=80"}
+];
+let cart={};
+const money=n=>n.toLocaleString("pt-BR",{style:"currency",currency:"BRL"});
+function renderProducts(filter="todas"){document.getElementById("products").innerHTML=pizzas.filter(p=>filter==="todas"||p.category===filter).map(p=>`<article class="card"><img src="${p.img}" alt="Pizza ${p.name}" loading="lazy"><div class="cardbody"><div class="cardtop"><h3>${p.name}</h3><span class="price">${money(p.price)}</span></div><p>${p.desc}</p><button class="add" onclick="addToCart(${p.id})">＋ Adicionar à sacola</button></div></article>`).join("")}
+document.querySelectorAll(".filter").forEach(b=>b.addEventListener("click",()=>{document.querySelectorAll(".filter").forEach(x=>x.classList.remove("active"));b.classList.add("active");renderProducts(b.dataset.filter)}));
+function addToCart(id){cart[id]=(cart[id]||0)+1;renderCart()}
+function changeQty(id,delta){cart[id]=(cart[id]||0)+delta;if(cart[id]<=0)delete cart[id];renderCart()}
+function renderCart(){const count=Object.values(cart).reduce((a,b)=>a+b,0);document.getElementById("cartCount").textContent=count;const entries=Object.entries(cart);document.getElementById("cartItems").innerHTML=entries.length?entries.map(([id,q])=>{const p=pizzas.find(x=>x.id==id);return `<div class="cartitem"><div><strong>${p.name}</strong><br><span class="sub">${money(p.price)} cada</span></div><div class="qty"><button onclick="changeQty(${id},-1)">−</button><span>${q}</span><button onclick="changeQty(${id},1)">+</button></div></div>`}).join(""):'<div class="empty">Sua sacola está vazia.<br>Que tal escolher uma pizza? 🍕</div>';document.getElementById("total").textContent=money(entries.reduce((sum,[id,q])=>sum+pizzas.find(p=>p.id==id).price*q,0))}
+function toggleCart(open){document.getElementById("cartPanel").classList.toggle("open",open)}
+function checkout(){const entries=Object.entries(cart);if(!entries.length){alert("Adicione uma pizza à sacola primeiro!");return}const lines=entries.map(([id,q])=>{const p=pizzas.find(x=>x.id==id);return `${q}x ${p.name} — ${money(p.price*q)}`});const total=entries.reduce((s,[id,q])=>s+pizzas.find(p=>p.id==id).price*q,0);const message=`Olá! Quero fazer este pedido:\n${lines.join("\n")}\nTotal: ${money(total)}`;const WHATSAPP_NUMBER="5521987125025";window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`,"_blank")}
+document.getElementById("year").textContent=new Date().getFullYear();renderProducts();renderCart();
+</script>
+</body>
+</html>
